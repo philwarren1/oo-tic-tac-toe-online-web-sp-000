@@ -82,5 +82,13 @@ end
      return false
    end
  end
- 
+ def over?
+   if draw? || won? || full?
+     return true
+     elsif won? && !full?
+       return true
+    else 
+     return false
+   end 
+end
 end
